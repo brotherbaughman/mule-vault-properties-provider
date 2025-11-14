@@ -43,6 +43,8 @@
 
   <properties>
     <vault.driver.version>5.4.0</vault.driver.version>
+    <maven.compiler.target>17</maven.compiler.target>
+    <maven.compiler.source>17</maven.compiler.source>
     <bouncy.castle.version>1.78</bouncy.castle.version>
     <test.containers.version>1.20.2</test.containers.version>
     <mock.server.version>5.10.0</mock.server.version>
@@ -141,7 +143,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-failsafe-plugin</artifactId>
-          <version>2.20.1</version>
+          <version>3.0.0-M7</version>
         </plugin>
       </plugins>
     </pluginManagement>
@@ -185,6 +187,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-failsafe-plugin</artifactId>
+        <version>3.0.0-M7</version>
         <executions>
           <execution>
             <id>integration-test</id>
